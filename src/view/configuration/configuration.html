@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Test Extension Configuration</title>
+  </head>
+  <body>
+    <h1>Test Extension Configuration</h1>
+
+    <form>
+      <div>
+        <label for="serviceId">Service Id</label>
+        <div>
+          <div>
+            <input type="text" placeholder="Enter a service Id" id="serviceId">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+    <script>
+      window.extensionBridge.register({
+        init: function(info) {
+          // Populate view with info.settings which will exist if the user is editing something
+          // that was previously saved.
+          if (info.settings) {
+            document.getElementById('serviceId').value = info.settings.serviceId;
+          }
+        },
+
+        getSettings: function() {
+          // Return user-provided settings.
+          return {
+            serviceId: document.getElementById('serviceId').value
+          };
+        },
+
+        validate: function() {
+          // Return whether the view is valid.
+          return document.getElementById('serviceId').value.length > 0;
+        }
+      });
+    </script>
+  </body>
+</html>

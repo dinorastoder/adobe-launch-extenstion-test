@@ -1,0 +1,33 @@
+{
+  "displayName": "Learning and Testing",
+  "name": "learning-and-testing",
+  "platform": "web",
+  "version": "1.0.0",
+  "description": "Learn how to create custom Launch extension",
+  "author": {
+    "name": "Dino Rastoder"
+  },
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "events": [],
+  "actions": [
+    {
+      "displayName": "Initiate Script",
+      "name": "initiate",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/initiate.js",
+      "viewPath": "actions/initiate.html"
+    }
+  ]
+}

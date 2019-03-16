@@ -1,0 +1,33 @@
+{
+  "name": "launch-extension",
+  "version": "1.0.0",
+  "description": "Adobe Launch Extension - Learning",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@adobe/reactor-packager": "*",
+    "@adobe/reactor-sandbox": "*",
+    "@adobe/reactor-scaffold": "*",
+    "@adobe/reactor-turbine": "*",
+    "@adobe/reactor-uploader": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sandbox": "reactor-sandbox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinorastoder/adobe-launch-extenstion-test.git"
+  },
+  "keywords": [
+    "adobe",
+    "launch",
+    "extension"
+  ],
+  "author": "Dino Rastoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dinorastoder/adobe-launch-extenstion-test/issues"
+  },
+  "homepage": "https://github.com/dinorastoder/adobe-launch-extenstion-test#readme"
+}
